@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins" "sans-serif";
+  font-size: 40px;
+}
+nav {
+  background-color: rgb(205, 203, 206);
+  color: #e4009f;
+  padding: 0.5rem 5rem;
+}
+.nav_logo {
+  letter-spacing: 2px;
+  font-size: 20px;
+}
