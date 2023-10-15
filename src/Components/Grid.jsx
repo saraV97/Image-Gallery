@@ -1,4 +1,5 @@
 import React from "react";
+import "./Grid.css";
 
 const Grid = ({ photos }) => {
   return (
@@ -8,8 +9,9 @@ const Grid = ({ photos }) => {
         {photos.map(({ photo, _id }) => (
           <div key={_id} className="grid_item">
             <img
-              src={`https://localhost:4000/uploads/${photo}`}
+              src={`http://localhost:4000/uploads/${photo}`}
               alt="grid_image"
+              style={{ width: "100%" }}
             />
           </div>
         ))}

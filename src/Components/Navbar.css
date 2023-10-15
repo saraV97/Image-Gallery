@@ -9,6 +9,7 @@ nav {
   background-color: rgb(205, 203, 206);
   color: #e4009f;
   padding: 0.5rem 5rem;
+  opacity: 0.7;
 }
 .nav_logo {
   letter-spacing: 2px;
