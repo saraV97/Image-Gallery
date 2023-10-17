@@ -1,17 +1,65 @@
+@font-face {
+  font-family: "Rocher";
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins" "sans-serif";
+  /* font-family: "poppins" "sans-serif"; */
   font-size: 40px;
 }
+
 nav {
-  background-color: rgb(205, 203, 206);
-  color: #e4009f;
+  background-color: #072541;
+  /* color: #f8bdeb; */
   padding: 0.5rem 5rem;
   opacity: 0.7;
+  text-shadow: 2px 0;
 }
-.nav_logo {
+/* .nav_logo {
   letter-spacing: 2px;
   font-size: 20px;
+  font-weight: bold;
+} */
+title {
+  font-family: "Rocher";
+  text-align: center;
+  font-size: 50px;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+@font-palette-values --Grays {
+  font-family: Rocher;
+  base-palette: 9;
+}
+
+@font-palette-values --Purples {
+  font-family: Rocher;
+  base-palette: 6;
+}
+
+@font-palette-values --Mint {
+  font-family: Rocher;
+  base-palette: 7;
+}
+
+.grays {
+  font-palette: --Grays;
+}
+
+.purples {
+  font-palette: --Purples;
+}
+
+.mint {
+  font-palette: --Mint;
 }

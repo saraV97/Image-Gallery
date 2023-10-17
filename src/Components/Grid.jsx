@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Grid.css";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Grid = ({ photos }) => {
+  const [model, setModel] = useState(false);
+  const [tempimgsrc, setTempImgSrc] = useState("");
+  const getImg = (photo) => {
+    console.warn(photo);
+    setTempImgSrc(photo);
+    setModel(true);
+  };
   return (
     <>
-      <h1>Our Gallery</h1>
+      <div className={model ? "model open" : "model"}>
+        <img
+          src={`http://localhost:4000/uploads/${tempimgsrc}`}
+          alt="select_img"
+        />
+        <CloseIcon onClick={() => setModel(false)} />
+      </div>
+      <h2>Our Gallery</h2>
       <div className="grid">
         {photos.map(({ photo, _id }) => (
-          <div key={_id} className="grid_item">
+          <div key={_id} className="grid_item" onClick={() => getImg(photo)}>
             <img
               src={`http://localhost:4000/uploads/${photo}`}
               alt="grid_image"
