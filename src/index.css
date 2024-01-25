@@ -7,8 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
   background-color: #0093e9;
-  background-image: linear-gradient(160deg, #046ba7 0%, #80d0c7 100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 105, 121, 0.695203081232493) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
   background-attachment: fixed;
+  scroll-behaviour: smooth;
 }
 
 code {
@@ -18,7 +24,7 @@ code {
 
 /* --------------------upload button ------------------------ */
 .button {
-  color: rgb(211, 211, 211);
+  color: rgb(130, 130, 130);
   font-size: 2rem;
   /* padding: 20px 20px; */
   height: 70px;
@@ -28,4 +34,11 @@ code {
   bottom: 0;
   margin: 2rem;
   cursor: pointer;
+}
+/* path {
+  box-shadow: 10px 10px 39px 15px rgba(0, 0, 0, 0.75);
+  z-index: 10;
+} */
+nav {
+  background-color: #97919f;
 }

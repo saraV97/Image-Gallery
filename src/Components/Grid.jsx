@@ -10,6 +10,7 @@ const Grid = ({ photos }) => {
     setTempImgSrc(photo);
     setModel(true);
   };
+
   return (
     <>
       <div className={model ? "model open" : "model"}>
@@ -19,7 +20,7 @@ const Grid = ({ photos }) => {
         />
         <CloseIcon onClick={() => setModel(false)} />
       </div>
-      <h2>Our Gallery</h2>
+      {/* <h2>Our Gallery</h2> */}
       <div className="grid">
         {photos.map(({ photo, _id }) => (
           <div key={_id} className="grid_item" onClick={() => getImg(photo)}>

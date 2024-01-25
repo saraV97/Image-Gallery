@@ -63,3 +63,14 @@ h1 {
 .mint {
   font-palette: --Mint;
 }
+
+@media screen and (max-width: 645px) {
+  .mint {
+    font-size: 25px;
+    /* width: full; */
+    /* padding: 1rem; */
+  }
+  h1 {
+    width: 250px;
+  }
+}
